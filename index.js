@@ -47,10 +47,12 @@ module.exports = function(sails) {
         }
 
         if(migrate === 'safe') {
+          sails.emit('hook:sequelize:loaded');
           return next();
         } else {
           var forceSync = migrate === 'drop';
           sequelize.sync({ force: forceSync }).then(function() {
+            sails.emit('hook:sequelize:loaded');
             return next();
           });
         }        

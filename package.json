@@ -1,7 +1,7 @@
 {
-  "name": "sails-hook-sequelize",
-  "version": "1.0.1",
-  "description": "Sails.js hook to use sequelize ORM",
+  "name": "sails-hook-sequelize-mt",
+  "version": "1.0.0",
+  "description": "Sails.js hook to use sequelize ORM. Generates a 'hook:sequelize:loaded' event when it is loaded.",
   "main": "index.js",
   "sails": {
     "isHook": true
@@ -14,7 +14,7 @@
     "sequelize",
     "orm"
   ],
-  "author": "Gergely Munkacsy",
+  "contributors": [ "Gergely Munkacsy", "Steve Glover <steven.glover@gmail.com>" ],
   "license": "MIT",
   "devDependencies": {
     "mocha": "^2.2.5",
@@ -33,10 +33,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:festo/sails-hook-sequelize.git"
+    "url": "git@github.com:sglover/sails-hook-sequelize.git"
   },
   "bugs": {
-    "url": "https://github.com/festo/sails-hook-sequelize/issues"
+    "url": "https://github.com/sglover/sails-hook-sequelize/issues"
   },
-  "homepage": "https://github.com/festo/sails-hook-sequelize"
+  "homepage": "https://github.com/sglover/sails-hook-sequelize"
 }
